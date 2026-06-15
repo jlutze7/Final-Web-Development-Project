@@ -1,0 +1,145 @@
+<!-- Requirements 
+1 - should not use any of the bootstrap content. ✅
+2 - An unordered list embedded in an ordered list (or the other way around) ✅
+3 - At least one image not from the Bootstrap theme (feel free to have many more) ✅
+4 - An embedded YouTube video ✅
+5 - on-page anchor ✅
+6-9 in style sheet ✅
+10 - You also need to link to (and apply) a stylesheet that you have created from scratch. ✅
+11 - At least three divs for positioning and styling blocks of content in the HTML page ✅
+12 - A live and interactive embedded Tableau graph (not just a picture of one). ✅
+13 - Navigation back to the professional-looking pages. ✅
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scratch Page – Riftbound: A League of Legends Card Game</title>
+
+    <!-- Requirement 10 ✅ -->
+    <link rel="stylesheet" href="scratch.css">
+</head>
+
+<body>
+
+    <!-- Navigation requirement 13 ✅ -->
+    <nav class="top-nav">
+        <a href="index.html">← Back to Main Site</a>
+    </nav>
+
+
+    <header class="header-block">
+        <h1 id="top">Riftbound – A League of Legends Card Game</h1>
+        <p>A strategic, deckbuilder that brings Runeterra’s champions to life in a whole new way.</p>
+    </header>
+
+
+    <div class="content-container">
+
+
+        <div class="content-block">
+            <h2>What Is Riftbound?</h2>
+            <p>
+                Riftbound is the official physical League of Legends trading card game (TCG) developed by Riot Games and
+                published by UVS Games in English-speaking regions. Set in the world of Runeterra, it allows 2–4 players
+                to compete by controlling shared zones called Battlefields to earn points, rather than reducing an
+                opponent's life total.
+            </p>
+
+            <!-- Requirement 3 ✅ -->
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2c/Riftbound_League_of_Legends_Trading_Card_Game_cover.png/250px-Riftbound_League_of_Legends_Trading_Card_Game_cover.png"
+                alt="Riftbound Logo" class="league-image">
+        </div>
+
+        <!-- Requirement 2 ✅ -->
+        <div class="content-block">
+            <h2>How Riftbound Works</h2>
+
+            <ol>
+                <li>Build your deck
+                    <ul>
+                        <li>Select a Legend that fits your playstyle</li>
+                        <li>Find the champion unit that matches up with said Legend</li>
+                        <li>Add 39 spells and units that match the domain of your Legend (the two colors shown on the
+                            Legend card)</li>
+                        <li>Add a total of 12 runes using the two domain colors</li>
+                    </ul>
+                </li>
+                <li>Gather resources and play cards from your deck</li>
+                <li>Score points by capturing battlefields and defending them from your enemy</li>
+                <li>Win by being the first player to hit 8 points</li>
+            </ol>
+
+            <p>
+                While it features complex strategic depth and keywords like Ganking, Ambush, and Hunt, the game is
+                designed to be accessible to newcomers while offering a unique emotional connection to League of Legends
+                champions through its deck-building requirements.
+            </p>
+        </div>
+
+        <!-- Requirement 4 ✅ -->
+        <div class="content-block">
+            <h2>How to Play</h2>
+            <p>
+                This video goes over the rules and how to play the game.
+                While every game can be different, the core idea stays the same: build smart, position well, and
+                outthink the enemy.
+            </p>
+
+            <div class="video-wrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/sPvBt2mroDY?si=GCw5PHQtsyWHRK7v"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- Requirement 12 ✅ -->
+        <div class="content-block">
+            <h2>Champion Popularity From Recent Regional Qualifier (Interactive Tableau)</h2>
+
+
+            <div class='tableauPlaceholder' id='viz1781563318525' style='position: relative'><noscript><a href='#'><img
+                            alt='Riftbound Legend Popularity '
+                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ri&#47;RiftboundInteractiveChart&#47;RiftboundLegendPopularity&#47;1_rss.png'
+                            style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='RiftboundInteractiveChart&#47;RiftboundLegendPopularity' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image'
+                        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ri&#47;RiftboundInteractiveChart&#47;RiftboundLegendPopularity&#47;1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='en-US' />
+                </object></div>
+            
+        </div>
+
+        <!-- Requirement 5 ✅ -->
+        <div class="content-block">
+            <h2>Jump Back to the Top</h2>
+            <a href="#top" class="anchor-link">Return to Page Header</a>
+        </div>
+
+    </div>
+
+    <footer class="footer-block">
+        <p> Jakob L. — Final Project </p>
+    </footer>
+
+<script
+                type='text/javascript'>                    var divElement = document.getElementById('viz1781563318525'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+</body>
+
+</html>
